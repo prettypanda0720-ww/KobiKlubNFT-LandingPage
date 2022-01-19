@@ -1,0 +1,98 @@
+// .button-base {
+//   width: 30px;
+//   height: 30px;
+//   background-position: center;
+//   background-size: cover;
+// }
+
+// .button {
+//   &-discord {
+//     margin-right: 10px;
+//     &:extend(.button-base);
+//     background-image: url("../../assets/images/discord-default.png");
+//     &:hover {
+//       background-image: url("../../assets/images/discord-hover.png");
+//     }
+//   }
+//   &-twitter {
+//     margin-left: 10px;
+//     &:extend(.button-base);
+//     background-image: url("../../assets/images/twitter-default.png");
+//     &:hover {
+//       background-image: url("../../assets/images/twitter-hover.png");
+//     }
+//   }
+// }
+.btn-mobile {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255) !important;
+  border: solid 1px black;
+}
+
+.ant-anchor-ink-ball {
+  border: 2px solid #5244ab;
+}
+.ant-anchor-link-title {
+  color: #ffffff;
+  font-weight: 500;
+}
+.ant-anchor-link-title:hover {
+  color: #000;
+}
+
+.ant-anchor-link-active > .ant-anchor-link-title {
+  color: #000;
+}
+
+.btn-discord {
+  position: relative;
+  margin-right: 10px;
+  background-color: #52cc83;
+  &:hover {
+    // background-color: rgba(255, 255, 255, 0.95);
+    border-color: #52cc83;
+  }
+}
+
+.btn-twitter {
+  position: relative;
+  margin-left: 10px;
+  border-color: #52cc83;
+  &:hover {
+    background-color: #52cc83;
+  }
+}
+
+.navItem {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px !important;
+  /* identical to box height */
+
+  letter-spacing: -0.01em;
+
+  color: #192038;
+}
+
+.svg-hover {
+  .default {
+    display: block;
+  }
+  .active {
+    display: none;
+  }
+  &:hover {
+    .default {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  }
+}
+
+.ant-drawer-content {
+  background-color: rgba(182, 124, 219, 0.8) !important;
+}

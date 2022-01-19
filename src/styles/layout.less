@@ -1,0 +1,3604 @@
+p {
+  margin: 0px;
+}
+
+.container-fluid {
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .container-fluid {
+    width: 90%;
+  }
+  .mobileHidden {
+    display: none;
+  }
+  .mobileVisible {
+    display: block;
+  }
+
+  .banner-wrapper {
+    margin-top: 65px;
+    // display: flex;
+    // position: relative;
+    // height: 100vh;
+    background-image: linear-gradient(to bottom right, #c194dd, #cfb2e8);
+    .banner-content-wrapper {
+      text-align: left;
+      padding: 60px 0px;
+      width: 65%;
+      margin: 0px auto;
+    }
+  }
+
+  .about-wrapper {
+    background: linear-gradient(to bottom right, #e7d33c, #efe586);
+    padding: 60px 0px;
+
+    .about-content-wrapper {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .about-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .about-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .roadmap-wrapper {
+    background: linear-gradient(90deg, #7ea6f4 0%, #91b2f3 100%);
+
+    .roadmap-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .roadmap-content-wrapper {
+      padding: 50px 0px 82px 0px;
+      // background-image: url("../assets/images/roadmap-background.png");
+      // background-repeat: no-repeat;
+      // background-position: 50% 110%;
+    }
+    .roadmap-item {
+      display: inline-flex;
+      align-items: center;
+      .content {
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 12px;
+
+        .label {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+      .value {
+        position: relative;
+        img {
+          &::after {
+            color: blue;
+            text-transform: uppercase;
+            content: "asdf";
+          }
+        }
+        .line {
+          position: absolute;
+          height: 80px;
+          background: white;
+          width: 1px;
+          transform: rotate(-35deg);
+        }
+      }
+    }
+  }
+
+  .rare-wrapper {
+    padding: 50px 0px 70px 0px;
+    background: linear-gradient(90deg, #f4ab3e 0%, #f3c47e 100%);
+
+    .rotate {
+      animation: rotation 20s infinite linear;
+      width: 90%;
+    }
+
+    .character-wrapper {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0px;
+      background-size: 210px 210px;
+    }
+
+    .rare-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .rare-summary {
+      margin-top: 25px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: #ffffff;
+    }
+
+    .rare-content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .rare-list {
+        padding: 35px 43px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px;
+
+        .rare-label {
+          font-family: Visby CF;
+          font-style: normal;
+          // font-weight: 600;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+
+        .rare-value {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .story-wrapper {
+    .story-content-wrapper {
+      text-align: center;
+      padding: 60px 0px;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .story-header {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-medium-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 42px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 0.04em;
+
+      color: #ffffff;
+    }
+
+    .story-footer {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 48px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .team-wrapper {
+    padding: 50px 0px 50px 0px;
+
+    .team-content-wrapper {
+      text-align: center;
+    }
+
+    .member-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .avatar {
+        width: 280px;
+        filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
+      }
+
+      .name {
+        margin-top: 15px;
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .role {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+    }
+
+    .team-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .mission-wrapper {
+    padding: 50px 0px 136px 0px;
+    background: linear-gradient(102.93deg, #b579da 0%, #cfb2e8 100%);
+
+    .mission-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .mission-content-wrapper {
+      width: 90%;
+      margin: 0 auto;
+
+      .mission-paragraph {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .wish-img-wrapper {
+        margin-top: 95px;
+        text-align: center;
+        img {
+          width: 225px;
+        }
+      }
+    }
+
+    .princess-image {
+      position: absolute;
+      left: -65px;
+      bottom: -85px;
+      width: 225px;
+      visibility: visible;
+    }
+  }
+
+  .faq-wrapper {
+    padding: 50px 0px 75px 0px;
+    background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+
+    .faq-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .faq-content-wrapper {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .site-collapse-custom-collapse .site-collapse-custom-panel,
+    .site-collapse-custom-collapse .site-collapse-custom-panel {
+      font-size: 15px;
+    }
+  }
+
+  .discord-wrapper {
+    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+    .discord-content-wrapper {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+    height: 300px;
+    background: linear-gradient(
+      360deg,
+      #b67cdb 83.23%,
+      rgba(182, 124, 219, 0) 100%
+    );
+
+    .footer-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .external-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .join-discord {
+    position: absolute;
+    left: 20px;
+    top: 9px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    width: 410px;
+    padding: 52px 76px;
+
+    .discord-btn {
+      background: linear-gradient(94.16deg, #83a9f4 0%, #89aff8 100%);
+      box-shadow: 0px 0px 8px rgb(0 0 0 / 30%);
+      border-radius: 20px;
+      padding: 15px 35px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 30px;
+      color: #ffffff;
+      /* identical to box height */
+
+      color: #ffffff;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+/*----------xs : 480px --------*/
+@media (min-width: 480px) {
+  .container-fluid {
+    width: 90%;
+  }
+  .mobileVisible {
+    display: block;
+  }
+
+  .mobileHidden {
+    display: none;
+  }
+
+  .banner-wrapper {
+    margin-top: 65px;
+    // display: flex;
+    // position: relative;
+    // height: 100vh;
+    background-image: linear-gradient(to bottom right, #c194dd, #cfb2e8);
+    .banner-content-wrapper {
+      text-align: left;
+      padding: 60px 0px;
+      width: 65%;
+      margin: 0px auto;
+    }
+  }
+
+  .about-wrapper {
+    background: linear-gradient(to bottom right, #e7d33c, #efe586);
+    padding: 60px 0px;
+
+    .about-content-wrapper {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .about-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .about-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .roadmap-wrapper {
+    background: linear-gradient(90deg, #7ea6f4 0%, #91b2f3 100%);
+
+    .roadmap-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .roadmap-content-wrapper {
+      padding: 50px 0px 82px 0px;
+      // background-image: url("../assets/images/roadmap-background.png");
+      // background-repeat: no-repeat;
+      // background-position: 50% 110%;
+    }
+    .roadmap-item {
+      display: inline-flex;
+      align-items: center;
+      .content {
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 12px;
+
+        .label {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+      .value {
+        position: relative;
+        img {
+          &::after {
+            color: blue;
+            text-transform: uppercase;
+            content: "asdf";
+          }
+        }
+        .line {
+          position: absolute;
+          height: 80px;
+          background: white;
+          width: 1px;
+          transform: rotate(-35deg);
+        }
+      }
+    }
+  }
+
+  .rare-wrapper {
+    padding: 50px 0px 70px 0px;
+    background: linear-gradient(90deg, #f4ab3e 0%, #f3c47e 100%);
+
+    .rotate {
+      animation: rotation 20s infinite linear;
+      width: 90%;
+    }
+
+    .character-wrapper {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0px;
+      background-size: 210px 210px;
+    }
+
+    .rare-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .rare-summary {
+      margin-top: 25px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: #ffffff;
+    }
+
+    .rare-content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .rare-list {
+        padding: 35px 43px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px;
+
+        .rare-label {
+          font-family: Visby CF;
+          font-style: normal;
+          // font-weight: 600;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+
+        .rare-value {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .story-wrapper {
+    .story-content-wrapper {
+      text-align: center;
+      padding: 60px 0px;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .story-header {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-medium-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 42px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 0.04em;
+
+      color: #ffffff;
+    }
+
+    .story-footer {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 48px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .team-wrapper {
+    padding: 50px 0px 50px 0px;
+
+    .team-content-wrapper {
+      text-align: center;
+    }
+
+    .member-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .avatar {
+        width: 280px;
+        filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
+      }
+
+      .name {
+        margin-top: 15px;
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .role {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+    }
+
+    .team-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .mission-wrapper {
+    padding: 50px 0px 136px 0px;
+    background: linear-gradient(102.93deg, #b579da 0%, #cfb2e8 100%);
+
+    .mission-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .mission-content-wrapper {
+      width: 90%;
+      margin: 0 auto;
+
+      .mission-paragraph {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .wish-img-wrapper {
+        margin-top: 95px;
+        text-align: center;
+        img {
+          width: 225px;
+        }
+      }
+    }
+
+    .princess-image {
+      position: absolute;
+      left: -65px;
+      bottom: -85px;
+      width: 225px;
+      visibility: visible;
+    }
+  }
+
+  .faq-wrapper {
+    padding: 50px 0px 75px 0px;
+    background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+
+    .faq-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .faq-content-wrapper {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .site-collapse-custom-collapse .site-collapse-custom-panel,
+    .site-collapse-custom-collapse .site-collapse-custom-panel {
+      font-size: 15px;
+    }
+  }
+
+  .discord-wrapper {
+    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+    .discord-content-wrapper {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+    height: 300px;
+    background: linear-gradient(
+      360deg,
+      #b67cdb 83.23%,
+      rgba(182, 124, 219, 0) 100%
+    );
+
+    .footer-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .external-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .join-discord {
+    position: absolute;
+    left: 20px;
+    top: 9px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    width: 410px;
+    padding: 52px 76px;
+
+    .discord-btn {
+      background: linear-gradient(94.16deg, #83a9f4 0%, #89aff8 100%);
+      box-shadow: 0px 0px 8px rgb(0 0 0 / 30%);
+      border-radius: 20px;
+      padding: 15px 35px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 30px;
+      color: #ffffff;
+      /* identical to box height */
+
+      color: #ffffff;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .mobileHidden {
+    display: none;
+  }
+
+  .mobileVisible {
+    display: block;
+  }
+
+  .banner-wrapper {
+    margin-top: 67px;
+    // display: flex;
+    // position: relative;
+    // height: 100vh;
+    background-image: linear-gradient(to bottom right, #c194dd, #cfb2e8);
+    .banner-content-wrapper {
+      text-align: left;
+      padding: 140px 0px;
+      width: 57%;
+      margin: 0px auto;
+    }
+  }
+
+  .about-wrapper {
+    background: linear-gradient(to bottom right, #e7d33c, #efe586);
+    padding: 60px 0px;
+
+    .about-content-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .about-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .about-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .roadmap-wrapper {
+    background: linear-gradient(90deg, #7ea6f4 0%, #91b2f3 100%);
+
+    .roadmap-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .roadmap-content-wrapper {
+      padding: 50px 0px 82px 0px;
+      // background-image: url("../assets/images/roadmap-background.png");
+      // background-repeat: no-repeat;
+      // background-position: 50% 110%;
+    }
+    .roadmap-item {
+      display: inline-flex;
+      align-items: center;
+      .content {
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 12px;
+
+        .label {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+      .value {
+        position: relative;
+        img {
+          &::after {
+            color: blue;
+            text-transform: uppercase;
+            content: "asdf";
+          }
+        }
+        .line {
+          position: absolute;
+          height: 80px;
+          background: white;
+          width: 1px;
+          transform: rotate(-35deg);
+        }
+      }
+    }
+  }
+
+  .rare-wrapper {
+    padding: 70px 0px 100px 0px;
+    background: linear-gradient(90deg, #f4ab3e 0%, #f3c47e 100%);
+
+    .rotate {
+      animation: rotation 20s infinite linear;
+      width: 94%;
+    }
+
+    .character-wrapper {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0px;
+    }
+
+    .rare-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .rare-summary {
+      margin-top: 40px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: #ffffff;
+    }
+
+    .rare-content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .rare-list {
+        padding: 35px 43px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px;
+
+        .rare-label {
+          font-family: Visby CF;
+          font-style: normal;
+          // font-weight: 600;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+
+        .rare-value {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .story-wrapper {
+    .story-content-wrapper {
+      text-align: center;
+      padding: 60px 0px;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .story-header {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-medium-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 42px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 0.04em;
+
+      color: #ffffff;
+    }
+
+    .story-footer {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 48px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .team-wrapper {
+    padding: 70px 0px 100px 0px;
+
+    .team-content-wrapper {
+      text-align: center;
+    }
+
+    .member-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .avatar {
+        width: initial;
+        filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
+      }
+
+      .name {
+        margin-top: 15px;
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .role {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+    }
+
+    .team-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .mission-wrapper {
+    padding: 70px 0px 136px 0px;
+    background: linear-gradient(102.93deg, #b579da 0%, #cfb2e8 100%);
+
+    .mission-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .mission-content-wrapper {
+      width: 90%;
+      margin: 0 auto;
+
+      .mission-paragraph {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .wish-img-wrapper {
+        margin-top: 95px;
+        text-align: center;
+        img {
+          width: 250px;
+        }
+      }
+    }
+
+    .princess-image {
+      position: absolute;
+      left: -75px;
+      bottom: -85px;
+      width: 260px;
+      visibility: visible;
+    }
+  }
+
+  .faq-wrapper {
+    padding: 60px 0px 75px 0px;
+    background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+
+    .faq-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .faq-content-wrapper {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .site-collapse-custom-collapse .site-collapse-custom-panel,
+    .site-collapse-custom-collapse .site-collapse-custom-panel {
+      font-size: 15px;
+    }
+  }
+
+  .discord-wrapper {
+    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+    .discord-content-wrapper {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+    height: 300px;
+    background: linear-gradient(
+      360deg,
+      #b67cdb 83.23%,
+      rgba(182, 124, 219, 0) 100%
+    );
+
+    .footer-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .external-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .join-discord {
+    position: absolute;
+    left: 70px;
+    top: 9px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    width: 436px;
+    padding: 52px 76px;
+
+    .discord-btn {
+      background: linear-gradient(94.16deg, #83a9f4 0%, #89aff8 100%);
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      padding: 15px 43px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 30px;
+      /* identical to box height */
+
+      color: #ffffff;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+/*----------sm : 768px --------*/
+@media (min-width: 768px) {
+  .container-fluid {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .mobileHidden {
+    display: none;
+  }
+
+  .mobileVisible {
+    display: block;
+  }
+
+  .banner-wrapper {
+    margin-top: 67px;
+    // display: flex;
+    // position: relative;
+    // height: 100vh;
+    background-image: linear-gradient(to bottom right, #c194dd, #cfb2e8);
+    .banner-content-wrapper {
+      text-align: left;
+      padding: 140px 0px;
+      width: 57%;
+      margin: 0px auto;
+    }
+  }
+
+  .about-wrapper {
+    background: linear-gradient(to bottom right, #e7d33c, #efe586);
+    padding: 60px 0px;
+
+    .about-content-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .about-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .about-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .roadmap-wrapper {
+    background: linear-gradient(90deg, #7ea6f4 0%, #91b2f3 100%);
+
+    .roadmap-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .roadmap-content-wrapper {
+      padding: 80px 0px 82px 0px;
+      // background-image: url("../assets/images/roadmap-background.png");
+      // background-repeat: no-repeat;
+      // background-position: 50% 110%;
+    }
+    .roadmap-item {
+      display: inline-flex;
+      align-items: center;
+      .content {
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 12px;
+
+        .label {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+      .value {
+        position: relative;
+        img {
+          &::after {
+            color: blue;
+            text-transform: uppercase;
+            content: "asdf";
+          }
+        }
+        .line {
+          position: absolute;
+          height: 80px;
+          background: white;
+          width: 1px;
+          transform: rotate(-35deg);
+        }
+      }
+    }
+  }
+
+  .rare-wrapper {
+    padding: 70px 0px 100px 0px;
+    background: linear-gradient(90deg, #f4ab3e 0%, #f3c47e 100%);
+
+    .rotate {
+      animation: rotation 20s infinite linear;
+      width: 80%;
+    }
+
+    .character-wrapper {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0px;
+    }
+
+    .rare-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .rare-summary {
+      margin-top: 40px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: #ffffff;
+    }
+
+    .rare-content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .rare-list {
+        padding: 35px 43px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px;
+
+        .rare-label {
+          font-family: Visby CF;
+          font-style: normal;
+          // font-weight: 600;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+
+        .rare-value {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .story-wrapper {
+    .story-content-wrapper {
+      text-align: center;
+      padding: 60px 0px;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .story-header {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-medium-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 42px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 0.04em;
+
+      color: #ffffff;
+    }
+
+    .story-footer {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 48px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .team-wrapper {
+    padding: 70px 0px 100px 0px;
+
+    .team-content-wrapper {
+      text-align: center;
+    }
+
+    .member-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .avatar {
+        width: initial;
+        filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
+      }
+
+      .name {
+        margin-top: 15px;
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .role {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+    }
+
+    .team-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .mission-wrapper {
+    padding: 70px 0px 136px 0px;
+    background: linear-gradient(102.93deg, #b579da 0%, #cfb2e8 100%);
+
+    .mission-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .mission-content-wrapper {
+      width: 90%;
+      margin: 0 auto;
+
+      .mission-paragraph {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .wish-img-wrapper {
+        margin-top: 95px;
+        text-align: center;
+        img {
+          width: 350px;
+        }
+      }
+    }
+
+    .princess-image {
+      position: absolute;
+      left: -100px;
+      bottom: -105px;
+      width: 300px;
+      visibility: visible;
+    }
+  }
+
+  .faq-wrapper {
+    padding: 60px 0px 75px 0px;
+    background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+
+    .faq-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .faq-content-wrapper {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+
+  .discord-wrapper {
+    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+    .discord-content-wrapper {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+    height: 300px;
+    background: linear-gradient(
+      360deg,
+      #b67cdb 83.23%,
+      rgba(182, 124, 219, 0) 100%
+    );
+
+    .footer-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .external-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .join-discord {
+    position: absolute;
+    left: 140px;
+    top: 9px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    width: 436px;
+    padding: 52px 76px;
+
+    .discord-btn {
+      background: linear-gradient(94.16deg, #83a9f4 0%, #89aff8 100%);
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      padding: 15px 43px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 30px;
+      /* identical to box height */
+
+      color: #ffffff;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+/*----------md : 992px --------*/
+@media (min-width: 992px) {
+  .container-fluid {
+    width: 892px;
+    max-width: 100%;
+  }
+
+  .mobileHidden {
+    display: none;
+  }
+
+  .mobileVisible {
+    display: block;
+  }
+
+  .banner-wrapper {
+    margin-top: 67px;
+    // display: flex;
+    // position: relative;
+    // height: 100vh;
+    background-image: linear-gradient(to bottom right, #c194dd, #cfb2e8);
+    .banner-content-wrapper {
+      text-align: left;
+      padding: 140px 0px;
+      width: 57%;
+      margin: 0px auto;
+    }
+  }
+
+  .about-wrapper {
+    background: linear-gradient(to bottom right, #e7d33c, #efe586);
+    padding: 60px 0px;
+
+    .about-content-wrapper {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .about-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .about-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .roadmap-wrapper {
+    background: linear-gradient(90deg, #7ea6f4 0%, #91b2f3 100%);
+
+    .roadmap-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .roadmap-content-wrapper {
+      padding: 80px 0px 82px 0px;
+      // background-image: url("../assets/images/roadmap-background.png");
+      // background-repeat: no-repeat;
+      // background-position: 50% 110%;
+    }
+    .roadmap-item {
+      display: inline-flex;
+      align-items: center;
+      .content {
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 12px;
+
+        .label {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+      .value {
+        position: relative;
+        img {
+          &::after {
+            color: blue;
+            text-transform: uppercase;
+            content: "asdf";
+          }
+        }
+        .line {
+          position: absolute;
+          height: 80px;
+          background: white;
+          width: 1px;
+          transform: rotate(-35deg);
+        }
+      }
+    }
+  }
+
+  .rare-wrapper {
+    padding: 70px 0px 100px 0px;
+    background: linear-gradient(90deg, #f4ab3e 0%, #f3c47e 100%);
+
+    .rare-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .rare-summary {
+      margin-top: 40px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: #ffffff;
+    }
+
+    .rare-content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .rare-list {
+        padding: 35px 43px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px;
+
+        .rare-label {
+          font-family: Visby CF;
+          font-style: normal;
+          // font-weight: 600;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+
+        .rare-value {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .story-wrapper {
+    .story-content-wrapper {
+      text-align: center;
+      padding: 60px 0px;
+      width: 54%;
+      margin: 0 auto;
+    }
+
+    .story-header {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-medium-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 42px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 0.04em;
+
+      color: #ffffff;
+    }
+
+    .story-footer {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 48px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .team-wrapper {
+    padding: 70px 0px 100px 0px;
+
+    .team-content-wrapper {
+      text-align: center;
+    }
+
+    .member-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .avatar {
+        width: initial;
+        filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
+      }
+
+      .name {
+        margin-top: 15px;
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .role {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+    }
+
+    .team-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .mission-wrapper {
+    padding: 70px 0px 136px 0px;
+    background: linear-gradient(102.93deg, #b579da 0%, #cfb2e8 100%);
+
+    .mission-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .mission-content-wrapper {
+      width: 80%;
+      margin: 0 auto;
+
+      .mission-paragraph {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .wish-img-wrapper {
+        margin-top: 95px;
+        text-align: center;
+        img {
+          width: 350px;
+        }
+      }
+    }
+
+    .princess-image {
+      position: absolute;
+      left: -100px;
+      bottom: -105px;
+      width: 300px;
+      visibility: visible;
+    }
+  }
+
+  .faq-wrapper {
+    padding: 60px 0px 75px 0px;
+    background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+
+    .site-collapse-custom-collapse .site-collapse-custom-panel,
+    .site-collapse-custom-collapse .site-collapse-custom-panel {
+      overflow: hidden;
+      border-bottom: 0.5px solid #ffffff;
+      border-radius: 2px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 31px;
+
+      color: #ffffff;
+    }
+    .faq-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .faq-content-wrapper {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+
+  .discord-wrapper {
+    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+    .discord-content-wrapper {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+    height: 300px;
+    background: linear-gradient(
+      360deg,
+      #b67cdb 83.23%,
+      rgba(182, 124, 219, 0) 100%
+    );
+
+    .footer-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .external-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .join-discord {
+    position: absolute;
+    left: 140px;
+    top: 9px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    width: 436px;
+    padding: 52px 76px;
+
+    .discord-btn {
+      background: linear-gradient(94.16deg, #83a9f4 0%, #89aff8 100%);
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      padding: 15px 43px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 30px;
+      /* identical to box height */
+
+      color: #ffffff;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+/*----------lg : 1200px --------*/
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1100px;
+    max-width: 100%;
+  }
+
+  .mobileHidden {
+    display: block;
+  }
+  .mobileVisible {
+    display: none;
+  }
+
+  .banner-wrapper {
+    margin-top: 67px;
+    // display: flex;
+    // position: relative;
+    // height: 100vh;
+    background-image: linear-gradient(to bottom right, #c194dd, #cfb2e8);
+    .banner-content-wrapper {
+      text-align: left;
+      padding: 140px 0px;
+      width: 57%;
+      margin: 0px auto;
+    }
+  }
+
+  .about-wrapper {
+    background: linear-gradient(to bottom right, #e7d33c, #efe586);
+    padding: 60px 0px;
+
+    .about-content-wrapper {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .about-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .about-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .roadmap-wrapper {
+    background: linear-gradient(90deg, #7ea6f4 0%, #91b2f3 100%);
+
+    .roadmap-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .roadmap-content-wrapper {
+      padding: 80px 0px 82px 0px;
+      background-image: url("../assets/images/roadmap-background.png");
+      background-repeat: no-repeat;
+      background-position: 50% 105%;
+    }
+    .roadmap-item {
+      display: inline-flex;
+      align-items: center;
+      .content {
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 12px;
+
+        .label {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+      .value {
+        position: relative;
+        img {
+          &::after {
+            color: blue;
+            text-transform: uppercase;
+            content: "asdf";
+          }
+        }
+        .line {
+          position: absolute;
+          height: 80px;
+          background: white;
+          width: 1px;
+          transform: rotate(-35deg);
+        }
+      }
+    }
+  }
+
+  .rare-wrapper {
+    padding: 70px 0px 100px 0px;
+    background: linear-gradient(90deg, #f4ab3e 0%, #f3c47e 100%);
+
+    .rare-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .rare-summary {
+      margin-top: 40px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: #ffffff;
+    }
+
+    .rare-content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .rare-list {
+        padding: 35px 43px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px;
+
+        .rare-label {
+          font-family: Visby CF;
+          font-style: normal;
+          // font-weight: 600;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+
+        .rare-value {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .story-wrapper {
+    .story-content-wrapper {
+      text-align: center;
+      padding: 60px 0px;
+      width: 54%;
+      margin: 0 auto;
+    }
+
+    .story-header {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-medium-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 42px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 0.04em;
+
+      color: #ffffff;
+    }
+
+    .story-footer {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 48px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .team-wrapper {
+    padding: 70px 0px 100px 0px;
+
+    .team-content-wrapper {
+      text-align: center;
+    }
+
+    .member-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .avatar {
+        width: initial;
+        filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
+      }
+
+      .name {
+        margin-top: 15px;
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .role {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+    }
+
+    .team-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .mission-wrapper {
+    padding: 70px 0px 136px 0px;
+    background: linear-gradient(102.93deg, #b579da 0%, #cfb2e8 100%);
+
+    .mission-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .mission-content-wrapper {
+      width: 80%;
+      margin: 0 auto;
+
+      .mission-paragraph {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .wish-img-wrapper {
+        margin-top: 95px;
+        text-align: center;
+        img {
+          width: 350px;
+        }
+      }
+    }
+
+    .princess-image {
+      position: absolute;
+      left: -100px;
+      bottom: -105px;
+      width: 300px;
+      visibility: visible;
+    }
+  }
+
+  .faq-wrapper {
+    padding: 60px 0px 75px 0px;
+    background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+
+    .site-collapse-custom-collapse .site-collapse-custom-panel,
+    .site-collapse-custom-collapse .site-collapse-custom-panel {
+      overflow: hidden;
+      border-bottom: 0.5px solid #ffffff;
+      border-radius: 2px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 31px;
+
+      color: #ffffff;
+    }
+
+    .faq-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .faq-content-wrapper {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .discord-wrapper {
+    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+    .discord-content-wrapper {
+      position: relative;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+    height: 300px;
+    background: linear-gradient(
+      360deg,
+      #b67cdb 83.23%,
+      rgba(182, 124, 219, 0) 100%
+    );
+
+    .footer-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .external-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .join-discord {
+    position: absolute;
+    left: 400px;
+    top: 9px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    width: 436px;
+    padding: 52px 76px;
+
+    .discord-btn {
+      background: linear-gradient(94.16deg, #83a9f4 0%, #89aff8 100%);
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      padding: 15px 43px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 30px;
+      /* identical to box height */
+
+      color: #ffffff;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+/*----------lg : 1200px 
+       custom: 1440px  
+----------------------------*/
+@media (min-width: 1440px) {
+  .container-fluid {
+    width: 1200px;
+    max-width: 100%;
+  }
+  .mobileHidden {
+    display: block;
+  }
+  .mobileVisible {
+    display: none;
+  }
+
+  .banner-wrapper {
+    margin-top: 67px;
+    // display: flex;
+    // position: relative;
+    // height: 100vh;
+    background-image: linear-gradient(to bottom right, #c194dd, #cfb2e8);
+    .banner-content-wrapper {
+      text-align: left;
+      padding: 140px 0px;
+      width: 57%;
+      margin: 0px auto;
+    }
+  }
+
+  .about-wrapper {
+    background: linear-gradient(to bottom right, #e7d33c, #efe586);
+    padding: 60px 0px;
+
+    .about-content-wrapper {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .about-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .about-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .roadmap-wrapper {
+    background: linear-gradient(90deg, #7ea6f4 0%, #91b2f3 100%);
+
+    .roadmap-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+      margin: 0 auto;
+      color: #ffffff;
+      margin-bottom: 40px;
+    }
+
+    .roadmap-content-wrapper {
+      padding: 80px 0px 82px 0px;
+      background-image: url("../assets/images/roadmap-background.png");
+      background-repeat: no-repeat;
+      background-position: 50% 126%;
+    }
+    .roadmap-item {
+      display: inline-flex;
+      align-items: center;
+      .content {
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 12px;
+
+        .label {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+      .value {
+        position: relative;
+        img {
+          &::after {
+            color: blue;
+            text-transform: uppercase;
+            content: "asdf";
+          }
+        }
+        .line {
+          position: absolute;
+          height: 80px;
+          background: white;
+          width: 1px;
+          transform: rotate(-35deg);
+        }
+      }
+    }
+  }
+
+  .rare-wrapper {
+    padding: 70px 0px 100px 0px;
+    background: linear-gradient(90deg, #f4ab3e 0%, #f3c47e 100%);
+
+    .rare-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .rare-summary {
+      margin-top: 40px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: #ffffff;
+    }
+
+    .rare-content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .rare-list {
+        padding: 35px 43px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px;
+
+        .rare-label {
+          font-family: Visby CF;
+          font-style: normal;
+          // font-weight: 600;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+
+        .rare-value {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 25px;
+          line-height: 30px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .story-wrapper {
+    .story-content-wrapper {
+      text-align: center;
+      padding: 60px 0px;
+      width: 54%;
+      margin: 0 auto;
+    }
+
+    .story-header {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      // font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .story-medium-summary {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 42px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 0.04em;
+
+      color: #ffffff;
+    }
+
+    .story-footer {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 48px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .team-wrapper {
+    padding: 70px 0px 100px 0px;
+
+    .team-content-wrapper {
+      text-align: center;
+    }
+
+    .member-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .avatar {
+        width: initial;
+        filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
+      }
+
+      .name {
+        margin-top: 15px;
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .role {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+    }
+
+    .team-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  .mission-wrapper {
+    padding: 70px 0px 136px 0px;
+    background: linear-gradient(102.93deg, #b579da 0%, #cfb2e8 100%);
+
+    .mission-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .mission-content-wrapper {
+      width: 90%;
+      margin: 0 auto;
+
+      .mission-paragraph {
+        font-family: Visby CF;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .wish-img-wrapper {
+        margin-top: 95px;
+        text-align: center;
+      }
+    }
+
+    .princess-image {
+      position: absolute;
+      left: -200px;
+      bottom: -105px;
+      visibility: visible;
+    }
+  }
+
+  .faq-wrapper {
+    padding: 60px 0px 75px 0px;
+    background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
+
+    .site-collapse-custom-collapse .site-collapse-custom-panel,
+    .site-collapse-custom-collapse .site-collapse-custom-panel {
+      overflow: hidden;
+      border-bottom: 0.5px solid #ffffff;
+      border-radius: 2px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 31px;
+
+      color: #ffffff;
+    }
+
+    .faq-title {
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    .faq-content-wrapper {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .discord-wrapper {
+    background: #d9f7e4;
+    .discord-content-wrapper {
+      position: relative;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+    height: 300px;
+    background: linear-gradient(
+      360deg,
+      #b67cdb 83.23%,
+      rgba(182, 124, 219, 0) 100%
+    );
+
+    .footer-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .external-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .join-discord {
+    position: absolute;
+    left: 482px;
+    top: 9px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(11px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    width: 436px;
+    padding: 52px 76px;
+
+    .discord-btn {
+      background: linear-gradient(94.16deg, #83a9f4 0%, #89aff8 100%);
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      padding: 15px 43px;
+      font-family: Visby CF;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 30px;
+      /* identical to box height */
+
+      color: #ffffff;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+/* 
+general 
+-------
+*/
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+// .container-fluid {
+//   margin: 0 auto;
+//   max-width: 1200px;
+//   padding: 0 15px;
+// }
+
+.ant-layout {
+}
+
+.mainLayout {
+  // background: #064e3b !important;
+  // background: #ffffff !important;
+  // background-image: url("../assets/banner-background.jpg") no-repeat;
+  // background-position: 50% 100%;
+  // background-size: cover;
+  // height: 100vh;
+}
+
+.mainLayout .ant-layout-header {
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+  background: none;
+  // background: radial-gradient(#CAA6E5, #CAA6E5);
+  background: linear-gradient(to bottom right, #caa6e5, #caa6e5);
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.bgGray {
+  background: #fafafa;
+}
+
+/* 
+title holder
+------------
+*/
+.titleHolder {
+  text-align: center;
+  position: relative;
+  padding: 0 0 20px;
+  margin: 0 0 40px;
+}
+
+.titleHolder:after {
+  transform: translateX(-50%);
+  content: "";
+  background: #1890ff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 50px;
+}
+
+.titleHolder h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* 
+header
+------ 
+*/
+.ant-layout-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.mobileHidden .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 0;
+  min-height: 64px;
+}
+
+.mobileVisible .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+  min-height: 64px;
+}
+
+.header .logo {
+  // height: 20px;
+  margin-right: 40px;
+  font-family: Gilroy-Black;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+
+.header .logo .fas {
+  color: #1890ff;
+  margin: 0 5px 0 0;
+  font-size: 28px;
+}
+
+.header .logo a {
+  color: #52cc83;
+}
+
+.header .ant-anchor-wrapper {
+  background: none;
+}
+
+.header .ant-anchor {
+  display: flex;
+}
+
+.header .ant-anchor-ink {
+  display: none;
+}
+
+.header .ant-anchor-link {
+  padding: 0 20px;
+  line-height: 1.4;
+  position: relative;
+}
+
+.header .ant-anchor-link:before,
+.header .ant-anchor-link:after {
+  content: "";
+  background: #000;
+  width: 1px;
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 30%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.header .ant-anchor-link:after {
+  left: auto;
+  right: 30%;
+}
+
+.header .ant-anchor-link.ant-anchor-link-active:before,
+.header .ant-anchor-link:hover:before {
+  left: 5%;
+  opacity: 1;
+}
+
+.header .ant-anchor-link.ant-anchor-link-active:after,
+.header .ant-anchor-link:hover:after {
+  right: 5%;
+  opacity: 1;
+}
+
+/* ant menu */
+.header .ant-menu {
+  border: 0;
+  background: none !important;
+}
+
+.header .ant-menu li.ant-menu-item {
+  position: relative;
+  color: #333;
+}
+
+.header .ant-menu li.ant-menu-item:before,
+.header .ant-menu li.ant-menu-item:after {
+  content: "";
+  background: #1890ff;
+  width: 1px;
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 30%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.header .ant-menu li.ant-menu-item:after {
+  left: auto;
+  right: 30%;
+}
+
+.header .ant-menu li.ant-menu-item,
+.header .ant-menu li.ant-menu-item-selected {
+  border: 0 !important;
+}
+
+.header .ant-menu li.ant-menu-item-selected,
+.header .ant-menu li.ant-menu-item:hover {
+  color: #1890ff;
+  background: none;
+}
+
+.header .ant-menu li.ant-menu-item-selected:before,
+.header .ant-menu li.ant-menu-item:hover:before {
+  left: 5%;
+  opacity: 1;
+}
+
+.header .ant-menu li.ant-menu-item-selected:after,
+.header .ant-menu li.ant-menu-item:hover:after {
+  right: 5%;
+  opacity: 1;
+}
+
+/* 
+footer
+------
+*/
+.ant-layout-footer {
+  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    360deg,
+    #b67cdb 83.23%,
+    rgba(182, 124, 219, 0) 100%
+  );
+  color: #fff !important;
+  text-align: center;
+  padding: 0px;
+}
+
+.mobileVisible {
+  // display: none;
+}
+
+.mobileHidden {
+  // display: block;
+}
+
+.vertical-center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mr-20 {
+  margin-right: 22px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-95 {
+  margin-top: 95px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.ant-collapse,
+.ant-collapse-borderless {
+  background: none;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background: darkgray;
+}
+
+.dot-line-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100% - 120px);
+
+  .circle-top {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+  }
+
+  .circle-bottom {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .line-dot {
+    border: none;
+    border-left: 1px dashed #ffffff;
+    width: 1px;
+    flex: 1;
+  }
+}
+
+.anticon-menu {
+  color: black;
+}
