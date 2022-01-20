@@ -14,7 +14,7 @@ const Rare = () => {
           of bunch.
         </p>
         <Row className="rare-content-wrapper mt-40">
-          <Col xs={24} sm={24} md={24} lg={12} xl={12} style={{paddingRight: "30px"}}>
+          <Col xs={24} sm={24} md={24} lg={12} xl={12} className="rarelist-wrapper">
             <div className="rare-list">
               <Row>
                 <Col xs={8} sm={8} md={8} lg={8} xl={8}>

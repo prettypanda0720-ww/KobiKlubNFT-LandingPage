@@ -24,10 +24,11 @@ const AppHeader = () => {
             <img src={Logo} />
           </div>
           <Anchor targetOffset="65">
-            <Link href="#traits" title="Traits" className="navItem" />
+            <Link href="#about" title="About us" className="navItem" />
+            {/* <Link href="#traits" title="Traits" className="navItem" /> */}
             <Link href="#roadmap" title="Roadmap" className="navItem" />
             <Link href="#team" title="Team" className="navItem" />
-            <Link href="#faq" title="FAQ" className="navItem" />
+            <Link href="#faq" title="FAQS" className="navItem" />
             <Link href="#socials" title="Socials" className="navItem" />
             <Link href="#mint" title="MINT" className="navItem" />
           </Anchor>
@@ -50,10 +51,11 @@ const AppHeader = () => {
             visible={visible}
           >
             <Anchor targetOffset="65">
-              <Link href="#traits" title="Traits" className="navItem" />
+              <Link href="#about" title="About us" className="navItem" />
+              {/* <Link href="#traits" title="Traits" className="navItem" /> */}
               <Link href="#roadmap" title="Roadmap" className="navItem" />
               <Link href="#team" title="Team" className="navItem" />
-              <Link href="#faq" title="FAQ" className="navItem" />
+              <Link href="#faq" title="FAQS" className="navItem" />
               <Link href="#socials" title="Socials" className="navItem" />
               <Link href="#mint" title="MINT" className="navItem" />
             </Anchor>

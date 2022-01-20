@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { Typography, Row, Col, Image, Card, Button } from "antd";
 import { Icon, CaretRightOutlined } from "@ant-design/icons";
-import Papa from "../../../assets/images/papa.png";
-import Mama from "../../../assets/images/mama.png";
-import Zio from "../../../assets/images/zio.png";
-import Chance from "../../../assets/images/chance.png";
-import Rosa from "../../../assets/images/rosa.png";
-import Technico from "../../../assets/images/technico.png";
-import Gio from "../../../assets/images/gio.png";
+import First from "../../../assets/images/Character1PreGen.png";
+import Second from "../../../assets/images/Character2PreGen.png";
+import Third from "../../../assets/images/Character3PreGen.png";
+import Fourth from "../../../assets/images/Character4PreGen.png";
+import Fifth from "../../../assets/images/Character5PreGen.png";
+import Sixth from "../../../assets/images/Character6PreGen.png";
+import Seventh from "../../../assets/images/Character7PreGen.png";
+import Eigth from "../../../assets/images/Character8PreGen.png";
+import Nineth from "../../../assets/images/Character9PreGen.png";
 
 import "antd/dist/antd.css";
 import "./styles.less";
@@ -21,60 +23,72 @@ const OurTeam = () => {
       <div className="container-fluid">
         <div className="team-content-wrapper">
           <Text className="team-title">Team Members</Text>
-          <Row className="mt-60">
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+          <Row className="flex justify-center mt-60">
+            <Col xs={24} sm={12} md={8} lg={8} xl={4}>
               <div className="member-item">
-                <img src={Papa} className="avatar" />
+                <img src={First} className="avatar" />
                 <Text className="name">Meta Papa</Text>
                 <Text className="role">Co Founder</Text>
               </div>
             </Col>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+            <Col xs={24} sm={12} md={8} lg={8} xl={4}>
               <div className="member-item">
-                <img src={Mama} className="avatar" />
+                <img src={Second} className="avatar" />
                 <Text className="name">Meta Mama</Text>
                 <Text className="role">Co Founder</Text>
               </div>
             </Col>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+            <Col xs={24} sm={12} md={8} lg={8} xl={4}>
               <div className="member-item">
-                <img src={Zio} className="avatar" />
+                <img src={Third} className="avatar" />
                 <Text className="name">Zio</Text>
                 <Text className="role">Creative</Text>
               </div>
             </Col>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+            <Col xs={24} sm={12} md={8} lg={8} xl={4}>
               <div className="member-item">
-                <img src={Chance} className="avatar" />
-                <Text className="name">Chance</Text>
-                <Text className="role">Marketing Team</Text>
+                <img src={Fourth} className="avatar" />
+                <Text className="name">Elasm</Text>
+                <Text className="role">Creative</Text>
+              </div>
+            </Col>
+            <Col xs={24} sm={12} md={8} lg={8} xl={4}>
+              <div className="member-item">
+                <img src={Fifth} className="avatar" />
+                <Text className="name">Rosa</Text>
+                <Text className="role">Community Manager</Text>
               </div>
             </Col>
           </Row>
-          <Row className="mt-50">
-            <Col md={12} lg={3} xl={3} />
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+          <Row className="flex justify-center mt-50">
+            <Col xs={24} sm={12} md={8} lg={8} xl={4}>
               <div className="member-item">
-                <img src={Rosa} className="avatar" />
-                <Text className="name">Meta Mama</Text>
-                <Text className="role">Co Founder</Text>
-              </div>
-            </Col>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
-              <div className="member-item">
-                <img src={Technico} className="avatar" />
-                <Text className="name">Zio</Text>
-                <Text className="role">Creative</Text>
-              </div>
-            </Col>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
-              <div className="member-item">
-                <img src={Gio} className="avatar" />
+                <img src={Sixth} className="avatar" />
                 <Text className="name">Chance</Text>
-                <Text className="role">Marketing Team</Text>
+                <Text className="role">Senior Manager</Text>
               </div>
             </Col>
-            <Col md={12} lg={3} xl={3} />
+            <Col xs={24} sm={12} md={8} lg={8} xl={4}>
+              <div className="member-item">
+                <img src={Seventh} className="avatar" />
+                <Text className="name">Gio</Text>
+                <Text className="role">Game Developer</Text>
+              </div>
+            </Col>
+            <Col xs={24} sm={12} md={8} lg={8} xl={4}>
+              <div className="member-item">
+                <img src={Eigth} className="avatar" />
+                <Text className="name">Technico</Text>
+                <Text className="role">Discord Manager</Text>
+              </div>
+            </Col>
+            <Col xs={24} sm={12} md={8} lg={8} xl={4}>
+              <div className="member-item">
+                <img src={Nineth} className="avatar" />
+                <Text className="name">Razor</Text>
+                <Text className="role">Web3 Developer</Text>
+              </div>
+            </Col>
           </Row>
         </div>
       </div>

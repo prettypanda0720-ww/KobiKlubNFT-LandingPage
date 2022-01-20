@@ -50,6 +50,54 @@ export const firstGroup = [
   {
     origin: eighth,
   },
+  {
+    origin: nineth,
+  },
+  {
+    origin: tenth,
+  },
+  {
+    origin: eleventh,
+  },
+  {
+    origin: twelveth,
+  },
+  {
+    origin: thirteenth,
+  },
+  {
+    origin: fourteenth,
+  },
+  {
+    origin: fifteenth,
+  },
+  {
+    origin: sixteenth,
+  },
+  {
+    origin: seventeenth,
+  },
+  {
+    origin: eighteenth,
+  },
+  {
+    origin: twentyth,
+  },
+  {
+    origin: twenty1th,
+  },
+  {
+    origin: twenty2th,
+  },
+  {
+    origin: twenty3th,
+  },
+  {
+    origin: twenty4th,
+  },
+  {
+    origin: twenty5th,
+  },
 ];
 
 export const secondGroup = [
@@ -76,6 +124,54 @@ export const secondGroup = [
   },
   {
     origin: sixteenth,
+  },
+  {
+    origin: seventeenth,
+  },
+  {
+    origin: eighteenth,
+  },
+  {
+    origin: twentyth,
+  },
+  {
+    origin: twenty1th,
+  },
+  {
+    origin: twenty2th,
+  },
+  {
+    origin: twenty3th,
+  },
+  {
+    origin: twenty4th,
+  },
+  {
+    origin: twenty5th,
+  },
+  {
+    origin: first,
+  },
+  {
+    origin: second,
+  },
+  {
+    origin: third,
+  },
+  {
+    origin: fourth,
+  },
+  {
+    origin: fifth,
+  },
+  {
+    origin: sixth,
+  },
+  {
+    origin: seventh,
+  },
+  {
+    origin: eighth,
   },
 ];
 
@@ -104,5 +200,53 @@ export const thirdGroup = [
   {
     origin: twenty5th,
   },
+  {
+    origin: first,
+  },
+  {
+    origin: second,
+  },
+  {
+    origin: third,
+  },
+  {
+    origin: fourth,
+  },
+  {
+    origin: fifth,
+  },
+  {
+    origin: sixth,
+  },
+  {
+    origin: seventh,
+  },
+  {
+    origin: eighth,
+  },
+  {
+    origin: nineth,
+  },
+  {
+    origin: tenth,
+  },
+  {
+    origin: eleventh,
+  },
+  {
+    origin: twelveth,
+  },
+  {
+    origin: thirteenth,
+  },
+  {
+    origin: fourteenth,
+  },
+  {
+    origin: fifteenth,
+  },
+  {
+    origin: sixteenth,
+  }
 ];
 

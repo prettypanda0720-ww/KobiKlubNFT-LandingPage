@@ -36,9 +36,18 @@ p {
     background: linear-gradient(to bottom right, #e7d33c, #efe586);
     padding: 60px 0px;
 
-    .about-content-wrapper {
-      width: 100%;
-      margin: 0 auto;
+    .aboutus {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .first-img {
+        height: 300px;
+      }
+      .second-img {
+        height: 60px;
+        margin-top: 20px;
+      }
     }
 
     .about-title {
@@ -84,7 +93,7 @@ p {
     }
 
     .roadmap-content-wrapper {
-      padding: 50px 0px 82px 0px;
+      padding: 50px 0px 0px 0px;
       // background-image: url("../assets/images/roadmap-background.png");
       // background-repeat: no-repeat;
       // background-position: 50% 110%;
@@ -93,9 +102,23 @@ p {
       display: inline-flex;
       align-items: center;
       .content {
-        padding: 15px;
-        background: #ffffff;
-        border-radius: 12px;
+        .summary {
+          padding-left: 20px;
+          padding-top: 20px;
+          color: white;
+          list-style: disc;
+          text-align: left;
+        }
+
+        .title {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 19px;
+
+          color: white;
+        }
 
         .label {
           font-family: Visby CF;
@@ -104,24 +127,7 @@ p {
           font-size: 16px;
           line-height: 19px;
 
-          color: rgba(0, 0, 0, 0.6);
-        }
-      }
-      .value {
-        position: relative;
-        img {
-          &::after {
-            color: blue;
-            text-transform: uppercase;
-            content: "asdf";
-          }
-        }
-        .line {
-          position: absolute;
-          height: 80px;
-          background: white;
-          width: 1px;
-          transform: rotate(-35deg);
+          color: white;
         }
       }
     }
@@ -137,7 +143,7 @@ p {
     }
 
     .character-wrapper {
-      margin-top: 60px;
+      margin-top: 0px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -175,6 +181,10 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .rarelist-wrapper {
+        padding-right: 0px;
+      }
 
       .rare-list {
         padding: 35px 43px;
@@ -285,7 +295,7 @@ p {
       margin-bottom: 20px;
 
       .avatar {
-        width: 280px;
+        width: 185px;
         filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
       }
 
@@ -408,11 +418,9 @@ p {
   }
 
   .discord-wrapper {
-    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
-    .discord-content-wrapper {
-      position: relative;
-      max-width: 720px;
-      margin: 0 auto;
+    background: #d9f7e4;
+    .character-img {
+      width: 240px;
     }
   }
 
@@ -443,8 +451,8 @@ p {
 
   .join-discord {
     position: absolute;
-    left: 20px;
-    top: 9px;
+    left: calc(50% - 205px);
+    top: 40px;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
     /* Note: backdrop-filter has minimal browser support */
@@ -505,9 +513,18 @@ p {
     background: linear-gradient(to bottom right, #e7d33c, #efe586);
     padding: 60px 0px;
 
-    .about-content-wrapper {
-      width: 100%;
-      margin: 0 auto;
+    .aboutus {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .first-img {
+        height: 300px;
+      }
+      .second-img {
+        height: 60px;
+        margin-top: 20px;
+      }
     }
 
     .about-title {
@@ -553,7 +570,7 @@ p {
     }
 
     .roadmap-content-wrapper {
-      padding: 50px 0px 82px 0px;
+      padding: 50px 0px 0px 0px;
       // background-image: url("../assets/images/roadmap-background.png");
       // background-repeat: no-repeat;
       // background-position: 50% 110%;
@@ -562,9 +579,23 @@ p {
       display: inline-flex;
       align-items: center;
       .content {
-        padding: 15px;
-        background: #ffffff;
-        border-radius: 12px;
+        .summary {
+          padding-left: 20px;
+          padding-top: 20px;
+          color: white;
+          list-style: disc;
+          text-align: left;
+        }
+
+        .title {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 19px;
+
+          color: white;
+        }
 
         .label {
           font-family: Visby CF;
@@ -573,24 +604,7 @@ p {
           font-size: 16px;
           line-height: 19px;
 
-          color: rgba(0, 0, 0, 0.6);
-        }
-      }
-      .value {
-        position: relative;
-        img {
-          &::after {
-            color: blue;
-            text-transform: uppercase;
-            content: "asdf";
-          }
-        }
-        .line {
-          position: absolute;
-          height: 80px;
-          background: white;
-          width: 1px;
-          transform: rotate(-35deg);
+          color: white;
         }
       }
     }
@@ -611,7 +625,7 @@ p {
       align-items: center;
       justify-content: center;
       padding-left: 0px;
-      background-size: 210px 210px;
+      background-size: 240px 240px;
     }
 
     .rare-title {
@@ -644,6 +658,10 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .rarelist-wrapper {
+        padding-right: 0px;
+      }
 
       .rare-list {
         padding: 35px 43px;
@@ -754,7 +772,7 @@ p {
       margin-bottom: 20px;
 
       .avatar {
-        width: 280px;
+        width: 300px;
         filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
       }
 
@@ -877,11 +895,9 @@ p {
   }
 
   .discord-wrapper {
-    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
-    .discord-content-wrapper {
-      position: relative;
-      max-width: 720px;
-      margin: 0 auto;
+    background: #d9f7e4;
+    .character-img {
+      width: 240px;
     }
   }
 
@@ -912,8 +928,8 @@ p {
 
   .join-discord {
     position: absolute;
-    left: 20px;
-    top: 9px;
+    left: calc(50% - 205px);
+    top: 40px;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
     /* Note: backdrop-filter has minimal browser support */
@@ -970,9 +986,18 @@ p {
     background: linear-gradient(to bottom right, #e7d33c, #efe586);
     padding: 60px 0px;
 
-    .about-content-wrapper {
-      width: 90%;
-      margin: 0 auto;
+    .aboutus {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .first-img {
+        height: 450px;
+      }
+      .second-img {
+        height: 60px;
+        margin-top: 20px;
+      }
     }
 
     .about-title {
@@ -1018,7 +1043,7 @@ p {
     }
 
     .roadmap-content-wrapper {
-      padding: 50px 0px 82px 0px;
+      padding: 40px 0px 0px 0px;
       // background-image: url("../assets/images/roadmap-background.png");
       // background-repeat: no-repeat;
       // background-position: 50% 110%;
@@ -1027,9 +1052,23 @@ p {
       display: inline-flex;
       align-items: center;
       .content {
-        padding: 15px;
-        background: #ffffff;
-        border-radius: 12px;
+        .summary {
+          padding-left: 20px;
+          padding-top: 20px;
+          color: white;
+          list-style: disc;
+          text-align: left;
+        }
+
+        .title {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 19px;
+
+          color: white;
+        }
 
         .label {
           font-family: Visby CF;
@@ -1038,24 +1077,7 @@ p {
           font-size: 16px;
           line-height: 19px;
 
-          color: rgba(0, 0, 0, 0.6);
-        }
-      }
-      .value {
-        position: relative;
-        img {
-          &::after {
-            color: blue;
-            text-transform: uppercase;
-            content: "asdf";
-          }
-        }
-        .line {
-          position: absolute;
-          height: 80px;
-          background: white;
-          width: 1px;
-          transform: rotate(-35deg);
+          color: white;
         }
       }
     }
@@ -1108,6 +1130,10 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .rarelist-wrapper {
+        padding-right: 30px;
+      }
 
       .rare-list {
         padding: 35px 43px;
@@ -1217,7 +1243,7 @@ p {
       align-items: center;
 
       .avatar {
-        width: initial;
+        width: 185px;
         filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
       }
 
@@ -1340,11 +1366,9 @@ p {
   }
 
   .discord-wrapper {
-    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
-    .discord-content-wrapper {
-      position: relative;
-      max-width: 720px;
-      margin: 0 auto;
+    background: #d9f7e4;
+    .character-img {
+      width: 288px;
     }
   }
 
@@ -1375,8 +1399,8 @@ p {
 
   .join-discord {
     position: absolute;
-    left: 70px;
-    top: 9px;
+    left: calc(50% - 218px);
+    top: 70px;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
     /* Note: backdrop-filter has minimal browser support */
@@ -1438,9 +1462,18 @@ p {
     background: linear-gradient(to bottom right, #e7d33c, #efe586);
     padding: 60px 0px;
 
-    .about-content-wrapper {
-      width: 90%;
-      margin: 0 auto;
+    .aboutus {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .first-img {
+        height: 450px;
+      }
+      .second-img {
+        height: 60px;
+        margin-top: 20px;
+      }
     }
 
     .about-title {
@@ -1486,7 +1519,7 @@ p {
     }
 
     .roadmap-content-wrapper {
-      padding: 80px 0px 82px 0px;
+      padding: 40px 0px 0px 0px;
       // background-image: url("../assets/images/roadmap-background.png");
       // background-repeat: no-repeat;
       // background-position: 50% 110%;
@@ -1495,9 +1528,23 @@ p {
       display: inline-flex;
       align-items: center;
       .content {
-        padding: 15px;
-        background: #ffffff;
-        border-radius: 12px;
+        .summary {
+          padding-left: 20px;
+          padding-top: 20px;
+          color: white;
+          list-style: disc;
+          text-align: left;
+        }
+
+        .title {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 19px;
+
+          color: white;
+        }
 
         .label {
           font-family: Visby CF;
@@ -1506,24 +1553,7 @@ p {
           font-size: 16px;
           line-height: 19px;
 
-          color: rgba(0, 0, 0, 0.6);
-        }
-      }
-      .value {
-        position: relative;
-        img {
-          &::after {
-            color: blue;
-            text-transform: uppercase;
-            content: "asdf";
-          }
-        }
-        .line {
-          position: absolute;
-          height: 80px;
-          background: white;
-          width: 1px;
-          transform: rotate(-35deg);
+          color: white;
         }
       }
     }
@@ -1576,6 +1606,10 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .rarelist-wrapper {
+        padding-right: 30px;
+      }
 
       .rare-list {
         padding: 35px 43px;
@@ -1685,7 +1719,7 @@ p {
       align-items: center;
 
       .avatar {
-        width: initial;
+        width: 185px;
         filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
       }
 
@@ -1803,11 +1837,9 @@ p {
   }
 
   .discord-wrapper {
-    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
-    .discord-content-wrapper {
-      position: relative;
-      max-width: 720px;
-      margin: 0 auto;
+    background: #d9f7e4;
+    .character-img {
+      width: 210px;
     }
   }
 
@@ -1838,8 +1870,8 @@ p {
 
   .join-discord {
     position: absolute;
-    left: 140px;
-    top: 9px;
+    left: calc(50% - 218px);
+    top: 20px;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
     /* Note: backdrop-filter has minimal browser support */
@@ -1901,9 +1933,18 @@ p {
     background: linear-gradient(to bottom right, #e7d33c, #efe586);
     padding: 60px 0px;
 
-    .about-content-wrapper {
-      width: 80%;
-      margin: 0 auto;
+    .aboutus {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .first-img {
+        height: 450px;
+      }
+      .second-img {
+        height: 60px;
+        margin-top: 20px;
+      }
     }
 
     .about-title {
@@ -1949,7 +1990,7 @@ p {
     }
 
     .roadmap-content-wrapper {
-      padding: 80px 0px 82px 0px;
+      padding: 40px 0px 0px 0px;
       // background-image: url("../assets/images/roadmap-background.png");
       // background-repeat: no-repeat;
       // background-position: 50% 110%;
@@ -1958,9 +1999,23 @@ p {
       display: inline-flex;
       align-items: center;
       .content {
-        padding: 15px;
-        background: #ffffff;
-        border-radius: 12px;
+        .summary {
+          padding-left: 20px;
+          padding-top: 20px;
+          color: white;
+          list-style: disc;
+          text-align: left;
+        }
+
+        .title {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 19px;
+
+          color: white;
+        }
 
         .label {
           font-family: Visby CF;
@@ -1969,24 +2024,7 @@ p {
           font-size: 16px;
           line-height: 19px;
 
-          color: rgba(0, 0, 0, 0.6);
-        }
-      }
-      .value {
-        position: relative;
-        img {
-          &::after {
-            color: blue;
-            text-transform: uppercase;
-            content: "asdf";
-          }
-        }
-        .line {
-          position: absolute;
-          height: 80px;
-          background: white;
-          width: 1px;
-          transform: rotate(-35deg);
+          color: white;
         }
       }
     }
@@ -1995,6 +2033,15 @@ p {
   .rare-wrapper {
     padding: 70px 0px 100px 0px;
     background: linear-gradient(90deg, #f4ab3e 0%, #f3c47e 100%);
+
+    .character-wrapper {
+      margin-top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0px;
+      background-size: 210px 210px;
+    }
 
     .rare-title {
       font-family: Visby CF;
@@ -2026,6 +2073,10 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .rarelist-wrapper {
+        padding-right: 30px;
+      }
 
       .rare-list {
         padding: 35px 43px;
@@ -2135,7 +2186,7 @@ p {
       align-items: center;
 
       .avatar {
-        width: initial;
+        width: 185px;
         filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
       }
 
@@ -2266,11 +2317,9 @@ p {
   }
 
   .discord-wrapper {
-    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
-    .discord-content-wrapper {
-      position: relative;
-      max-width: 720px;
-      margin: 0 auto;
+    background: #d9f7e4;
+    .character-img {
+      width: 210px;
     }
   }
 
@@ -2301,8 +2350,8 @@ p {
 
   .join-discord {
     position: absolute;
-    left: 140px;
-    top: 9px;
+    left: calc(50% - 218px);
+    top: 25px;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
     /* Note: backdrop-filter has minimal browser support */
@@ -2363,9 +2412,18 @@ p {
     background: linear-gradient(to bottom right, #e7d33c, #efe586);
     padding: 60px 0px;
 
-    .about-content-wrapper {
-      width: 80%;
-      margin: 0 auto;
+    .aboutus {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .first-img {
+        height: 450px;
+      }
+      .second-img {
+        height: 60px;
+        margin-top: 20px;
+      }
     }
 
     .about-title {
@@ -2412,17 +2470,28 @@ p {
 
     .roadmap-content-wrapper {
       padding: 80px 0px 82px 0px;
-      background-image: url("../assets/images/roadmap-background.png");
-      background-repeat: no-repeat;
-      background-position: 50% 105%;
     }
     .roadmap-item {
       display: inline-flex;
       align-items: center;
       .content {
-        padding: 15px;
-        background: #ffffff;
-        border-radius: 12px;
+        .summary {
+          padding-left: 20px;
+          padding-top: 20px;
+          color: white;
+          list-style: disc;
+          text-align: left;
+        }
+
+        .title {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 19px;
+
+          color: white;
+        }
 
         .label {
           font-family: Visby CF;
@@ -2431,24 +2500,7 @@ p {
           font-size: 16px;
           line-height: 19px;
 
-          color: rgba(0, 0, 0, 0.6);
-        }
-      }
-      .value {
-        position: relative;
-        img {
-          &::after {
-            color: blue;
-            text-transform: uppercase;
-            content: "asdf";
-          }
-        }
-        .line {
-          position: absolute;
-          height: 80px;
-          background: white;
-          width: 1px;
-          transform: rotate(-35deg);
+          color: white;
         }
       }
     }
@@ -2457,6 +2509,15 @@ p {
   .rare-wrapper {
     padding: 70px 0px 100px 0px;
     background: linear-gradient(90deg, #f4ab3e 0%, #f3c47e 100%);
+
+    .character-wrapper {
+      margin-top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0px;
+      background-size: 240px 240px;
+    }
 
     .rare-title {
       font-family: Visby CF;
@@ -2488,6 +2549,10 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .rarelist-wrapper {
+        padding-right: 30px;
+      }
 
       .rare-list {
         padding: 35px 43px;
@@ -2597,7 +2662,7 @@ p {
       align-items: center;
 
       .avatar {
-        width: initial;
+        width: 185px;
         filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
       }
 
@@ -2729,11 +2794,9 @@ p {
   }
 
   .discord-wrapper {
-    // background: linear-gradient(90deg, #e67ca6 0%, #efb4cb 100%);
-    .discord-content-wrapper {
-      position: relative;
-      max-width: 1400px;
-      margin: 0 auto;
+    background: #d9f7e4;
+    .character-img {
+      width: 210px;
     }
   }
 
@@ -2764,8 +2827,8 @@ p {
 
   .join-discord {
     position: absolute;
-    left: 400px;
-    top: 9px;
+    left: calc(50% - 218px);
+    top: 25px;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
     /* Note: backdrop-filter has minimal browser support */
@@ -2827,9 +2890,18 @@ p {
     background: linear-gradient(to bottom right, #e7d33c, #efe586);
     padding: 60px 0px;
 
-    .about-content-wrapper {
-      width: 80%;
-      margin: 0 auto;
+    .aboutus {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .first-img {
+        height: 450px;
+      }
+      .second-img {
+        height: 60px;
+        margin-top: 20px;
+      }
     }
 
     .about-title {
@@ -2842,7 +2914,7 @@ p {
 
       text-align: center;
 
-      color: rgba(0, 0, 0, 0.7);
+      color: rgba(255, 255, 255, 0.7);
     }
 
     .about-summary {
@@ -2853,7 +2925,7 @@ p {
       line-height: 26px;
       text-align: center;
 
-      color: rgba(0, 0, 0, 0.7);
+      color: rgba(255, 255, 255, 0.7);
     }
   }
 
@@ -2876,17 +2948,28 @@ p {
 
     .roadmap-content-wrapper {
       padding: 80px 0px 82px 0px;
-      background-image: url("../assets/images/roadmap-background.png");
-      background-repeat: no-repeat;
-      background-position: 50% 126%;
     }
     .roadmap-item {
       display: inline-flex;
       align-items: center;
       .content {
-        padding: 15px;
-        background: #ffffff;
-        border-radius: 12px;
+        .summary {
+          padding-left: 20px;
+          padding-top: 20px;
+          color: white;
+          list-style: disc;
+          text-align: left;
+        }
+
+        .title {
+          font-family: Visby CF;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 19px;
+
+          color: white;
+        }
 
         .label {
           font-family: Visby CF;
@@ -2895,24 +2978,7 @@ p {
           font-size: 16px;
           line-height: 19px;
 
-          color: rgba(0, 0, 0, 0.6);
-        }
-      }
-      .value {
-        position: relative;
-        img {
-          &::after {
-            color: blue;
-            text-transform: uppercase;
-            content: "asdf";
-          }
-        }
-        .line {
-          position: absolute;
-          height: 80px;
-          background: white;
-          width: 1px;
-          transform: rotate(-35deg);
+          color: white;
         }
       }
     }
@@ -2921,6 +2987,15 @@ p {
   .rare-wrapper {
     padding: 70px 0px 100px 0px;
     background: linear-gradient(90deg, #f4ab3e 0%, #f3c47e 100%);
+
+    .character-wrapper {
+      margin-top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0px;
+      background-size: 270px 270px;
+    }
 
     .rare-title {
       font-family: Visby CF;
@@ -2952,6 +3027,10 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .rarelist-wrapper {
+        padding-right: 30px;
+      }
 
       .rare-list {
         padding: 35px 43px;
@@ -3061,7 +3140,8 @@ p {
       align-items: center;
 
       .avatar {
-        width: initial;
+        width: 185px;
+        border-radius: 10px;
         filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.2));
       }
 
@@ -3145,7 +3225,7 @@ p {
 
     .princess-image {
       position: absolute;
-      left: -200px;
+      left: -130px;
       bottom: -105px;
       visibility: visible;
     }
@@ -3190,10 +3270,8 @@ p {
 
   .discord-wrapper {
     background: #d9f7e4;
-    .discord-content-wrapper {
-      position: relative;
-      max-width: 1400px;
-      margin: 0 auto;
+    .character-img {
+      width: 210px;
     }
   }
 
@@ -3224,8 +3302,8 @@ p {
 
   .join-discord {
     position: absolute;
-    left: 482px;
-    top: 9px;
+    left: calc(50% - 218px);
+    top: 25px;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(11px);
@@ -3254,6 +3332,17 @@ p {
     }
   }
 }
+
+@media (min-width: 1600px) {
+  .discord-wrapper {
+    background: #d9f7e4;
+    .character-img {
+      width: 205px;
+    }
+  }
+}
+
+
 
 /* 
 general 
@@ -3338,6 +3427,11 @@ header
   left: 0;
   right: 0;
   z-index: 999;
+  overflow: hidden;
+}
+
+.ant-layout-content {
+  overflow: hidden;
 }
 
 .mobileHidden .header {
@@ -3518,6 +3612,10 @@ footer
   margin-right: 30px;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
 .mt-20 {
   margin-top: 20px;
 }
@@ -3601,4 +3699,16 @@ footer
 
 .anticon-menu {
   color: black;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
 }

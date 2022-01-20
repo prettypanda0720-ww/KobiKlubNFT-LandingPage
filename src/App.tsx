@@ -25,11 +25,11 @@ function App() {
       <Content>
         <RoadWards />
         <About />
-        <Story />
         <Rare />
-        <Mission />
+        {/* <Mission /> */}
         <RoadMap />
         <OurTeam />
+        <Story />
         <FAQ />
         <Discord />
       </Content>
