@@ -19,10 +19,18 @@ function AppFooter() {
       <div className="footer-content-wrapper">
         <img src={footerLogo} />
         <div className="external-wrapper">
-          <img src={twitter} />
-          <img src={discord} />
-          <img src={instagram} />
-          <img src={youtube} />
+          <a href="https://twitter.com/MMYC_NFT" target="_blank" className="social-link">
+            <img src={twitter} />
+          </a>
+          <a href="https://discord.gg/6bNCRkrA" target="_blank" className="social-link">
+            <img src={discord} />
+          </a>
+          <a href="https://www.instagram.com/kobikidz/" target="_blank" className="social-link">
+            <img src={instagram} />
+          </a>
+          <a href="https://www.youtube.com/channel/UC0LLNuPK6h8c-hXvZCNP2JQ/featured" target="_blank" className="social-link">
+            <img src={youtube} />
+          </a>
         </div>
         <img src={footerMMYC} />
       </div>

@@ -156,7 +156,7 @@ const Discord = () => {
               })}
             </Carousel>
             <div className="join-discord">
-              <div className="discord-btn">Join our Discord</div>
+              <a href="https://discord.gg/6bNCRkrA" target="_blank" className="discord-btn">Join our Discord</a>
             </div>
           </Col>
         </Row>
