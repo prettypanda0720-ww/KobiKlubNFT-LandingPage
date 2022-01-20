@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Row, Col, Image } from "antd";
 import Raries from "../../../assets/images/raries.png";
 import "./styles.less";
@@ -57,7 +58,7 @@ const Rare = () => {
             </div>
           </Col>
           <Col xs={24} sm={24} md={24} lg={12} xl={12} className="character-wrapper">
-            <img src={Raries} class="rotate" />
+            <img src={Raries} className="rotate" />
           </Col>
         </Row>
       </div>

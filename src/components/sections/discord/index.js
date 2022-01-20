@@ -82,10 +82,10 @@ const Discord = () => {
               ssr={true} // means to render carousel on server-side.
               infinite={true}
               autoPlay={true}
-              autoPlaySpeed={2000}
+              autoPlaySpeed={5000}
               keyBoardControl={true}
               customTransition="all .5"
-              transitionDuration={500}
+              transitionDuration={1000}
               containerClass="carousel-container"
               removeArrowOnDeviceType={[
                 "superLargeDesktop6",
@@ -106,7 +106,7 @@ const Discord = () => {
               itemClass="carousel-item-padding-40-px"
             >
               {firstGroup.map((item, index) => {
-                return <img src={item.origin} className="character-img" />;
+                return <img key={index} src={item.origin} className="character-img" />;
               })}
             </Carousel>
           </Col>
@@ -128,10 +128,10 @@ const Discord = () => {
               ssr={true} // means to render carousel on server-side.
               infinite={true}
               autoPlay={true}
-              autoPlaySpeed={2000}
               keyBoardControl={true}
               customTransition="all .5"
-              transitionDuration={500}
+              autoPlaySpeed={5000}
+              transitionDuration={1000}
               containerClass="carousel-container"
               removeArrowOnDeviceType={[
                 "mobile1",
@@ -152,7 +152,7 @@ const Discord = () => {
               itemClass="carousel-item-padding-40-px"
             >
               {secondGroup.map((item, index) => {
-                return <img src={item.origin} className="character-img" />;
+                return <img key={index} src={item.origin} className="character-img" />;
               })}
             </Carousel>
             <div className="join-discord">
@@ -170,10 +170,10 @@ const Discord = () => {
               ssr={true} // means to render carousel on server-side.
               infinite={true}
               autoPlay={true}
-              autoPlaySpeed={2000}
+              autoPlaySpeed={5000}
               keyBoardControl={true}
               customTransition="all .5"
-              transitionDuration={500}
+              transitionDuration={1000}
               containerClass="carousel-container"
               removeArrowOnDeviceType={[
                 "mobile1",
@@ -194,7 +194,7 @@ const Discord = () => {
               itemClass="carousel-item-padding-40-px"
             >
               {thirdGroup.map((item, index) => {
-                return <img src={item.origin} className="character-img" />;
+                return <img key={index} src={item.origin} className="character-img" />;
               })}
             </Carousel>
           </Col>

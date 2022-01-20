@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.less";
 import { Row, Col, Typography, BackTop, Button, Image } from "antd";
-import { DiscordMainIcon, TwitterMainIcon } from "../utils";
 import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons";
 import footerLogo from "../../assets/images/footer-logo.png";
 import twitter from "../../assets/images/twitter.png";
