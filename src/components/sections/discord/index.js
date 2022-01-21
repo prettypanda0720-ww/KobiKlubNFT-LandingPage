@@ -106,7 +106,7 @@ const Discord = () => {
               itemClass="carousel-item-padding-40-px"
             >
               {firstGroup.map((item, index) => {
-                return <img key={index} src={item.origin} className="character-img" />;
+                return <img src={item.origin} className="character-img" />;
               })}
             </Carousel>
           </Col>
@@ -152,7 +152,7 @@ const Discord = () => {
               itemClass="carousel-item-padding-40-px"
             >
               {secondGroup.map((item, index) => {
-                return <img key={index} src={item.origin} className="character-img" />;
+                return <img src={item.origin} className="character-img" />;
               })}
             </Carousel>
             <div className="join-discord">
@@ -194,7 +194,7 @@ const Discord = () => {
               itemClass="carousel-item-padding-40-px"
             >
               {thirdGroup.map((item, index) => {
-                return <img key={index} src={item.origin} className="character-img" />;
+                return <img src={item.origin} className="character-img" />;
               })}
             </Carousel>
           </Col>
@@ -205,3 +205,4 @@ const Discord = () => {
 };
 
 export default Discord;
+

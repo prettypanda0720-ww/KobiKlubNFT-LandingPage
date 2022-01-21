@@ -3,22 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ant-design/icons": "^4.0.6",
-    "@craco/craco": "5.5.0",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.2",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
-    "antd": "4.1.4",
+    "web-vitals": "^1.0.1",
     "craco-antd": "1.14.1",
     "craco-less": "1.16.0",
+    "antd": "4.1.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-multi-carousel": "^2.6.5",
     "react-reveal": "^1.2.2",
-    "react-scripts": "3.4.1",
-    "typescript": "^3.8.3",
-    "web-vitals": "^1.0.1"
+    "@ant-design/icons": "^4.0.6",
+    "@craco/craco": "5.5.0",
+    "react-scripts": "3.3.1",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "craco start",
