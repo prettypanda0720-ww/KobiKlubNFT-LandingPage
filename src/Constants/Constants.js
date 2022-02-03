@@ -42,7 +42,7 @@ export default {
     },
     {
       question: "Why Make-A-Wish? ",
-      answer: "<p>The MMYC Team are extremely passionate about making a difference to critically ill children worldwide and Make-a-Wish allows us to gift to individuals and see the impact it has on their lives, which is something our community and holders can be proud</p>",
+      answer: "<p>The MMYC Team are extremely passionate about making a difference to critically ill children worldwide and Make-a-Wish allows us to gift to individuals and see the impact it has on their lives, which is something our community and holders can be proud of.</p>",
       collapse: true,
     }
   ],
