@@ -151,7 +151,7 @@ export default function Roadmap() {
           <p className="text-white" style={{fontWeight: "bold"}}>Make-A-Wish</p>
           <ul className="text-white">
             <li>
-              <p className="font-md">0
+              <p className="font-md">
                 Visiting and Documenting the Recipients of the MMYC Community’s charity donations.
               </p>
             </li>

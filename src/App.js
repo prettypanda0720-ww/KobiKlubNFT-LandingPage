@@ -31,7 +31,7 @@ function App() {
       <div className="body">
         <Navbar />
         <Dashboard />
-        <ConnectWallet />
+        {/* <ConnectWallet /> */}
         <Viproom />
         <About />
         <Rare />
