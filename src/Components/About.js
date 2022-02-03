@@ -41,7 +41,7 @@ export default function About() {
                   All the way from the Meta Mini Youth Club the Meta Minis have arrived and are ready to make a huge impact. Only 7000 Meta Minis will be minted as ERC-721 tokens on the Ethereum blockchain.
                 </p>
                 <p className="mt-2 aboutTxt">
-                  As a youth club member you are guaranteed many long and exciting adentures ahead. Not only will you be generating passive income and making critically ill children's wishes come true. You will be helping to shape the ethos of Web3.0 into an opportunistic place for the next generation. Encouraging those to foster an open conversation about the benefits of the online world and our future within the metaverse.
+                  As a youth club member you are guaranteed many long and exciting adventures ahead. Not only will you be generating passive income and making critically ill children's wishes come true. You will be helping to shape the ethos of Web3.0 into an opportunistic place for the next generation. Encouraging those to foster an open conversation about the benefits of the online world and our future within the metaverse.
                 </p>
                 <p className="mt-2 aboutTxt">
                   Adopt a Meta Mini and join us on our journey to build a brand for the next generation.

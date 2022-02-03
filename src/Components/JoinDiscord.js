@@ -9,7 +9,7 @@ export default function JoinDiscord() {
         <div className="joinDiscord" style={{position: "relative"}}>
           <DSImage src={"discord-background.png"}>
             <div className="join-discord">
-              <a href="https://discord.gg/6bNCRkrA" target="_blank" className="discord-btn">Join our Discord</a>
+              <a href="https://discord.gg/metaminiyouthclub" target="_blank" className="discord-btn">Join our Discord</a>
             </div>
           </DSImage>
         </div>
@@ -32,7 +32,7 @@ export default function JoinDiscord() {
                     </a>
                   </li>
                   <li>
-                    <a href="https://discord.gg/6bNCRkrA" target="_blank">
+                    <a href="https://discord.gg/metaminiyouthclub" target="_blank">
                       <span className="nb-icon">
                         <FaDiscord />
                       </span>
