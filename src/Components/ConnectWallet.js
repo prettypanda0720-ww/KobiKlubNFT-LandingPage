@@ -294,13 +294,14 @@ export default function ConnectWallet() {
         default:
           return;    
       }
-    } else {
+    } 
+    /*else {
       return (
         <Col md={12} className="text-center mt-5">
           <h2>MINTING IS NOT STARTED YET</h2>
         </Col>
       );
-    }
+    }*/
   };
 
   return (
