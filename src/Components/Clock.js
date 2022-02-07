@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { ListGroup } from "react-bootstrap";
-import moment from "moment";
 
 export default function Clock({ class_name }) {
   var moment = require("moment-timezone");
 
-  const [launchTime, setLanuchTime] = useState(
+  const [launchTime] = useState(
     new moment("2022-02-07T17:00:00-05:00")
   );
   const [today, setToday] = useState(new moment());

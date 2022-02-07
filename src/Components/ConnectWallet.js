@@ -1,36 +1,30 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import { Row, Col, Container, Image } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import Clock from "./Clock";
-import PresaleClock from "./PresaleClock";
-import Dropdown from "./CardMenu";
-import AddToCalendar from "../react-calendar/ReactAddToCalendar";
 import ContractAbi from "../Abis/MetaMiniYouthClubNFT.json";
 import web3 from "web3";
-// import { injected } from "../Components/connectors";
-import { BigNumber, ethers, getDefaultProvider } from "ethers";
+
+import { ethers } from "ethers";
 import { selectWalletAuth } from "../redux/walletauth/selectors";
-import { useDispatch, useSelector } from "react-redux";
-import { useWalletContext } from "../contexts/wallet";
+import { useSelector } from "react-redux";
 import { PRESALE_PRICE, PUBLICSALE_PRICE } from "../config";
 import { getMerkleProof } from "../utils/merkleTree";
 require("dotenv").config();
 
 export default function ConnectWallet() {
-  const [isOpen, setIsOpen] = useState(false);
   const [clicks, setClicks] = useState(0);
   const [currentStage, setCurrentStage] = useState(0);
 
-  const walletContext = useWalletContext();
-  const { address, provider, web3Provider, signer, chainId } =
+  const { address,signer, chainId } =
     useSelector(selectWalletAuth);
 
   const IncrementItem = () => {
-    if (currentStage == 1) {
+    if (currentStage === 1) {
       if (clicks < 5) {
         setClicks(clicks + 1);
       }
-    } else if (currentStage == 2) {
+    } else if (currentStage === 2) {
       if (clicks < 10) {
         setClicks(clicks + 1);
       }
@@ -41,10 +35,6 @@ export default function ConnectWallet() {
     if (clicks > 1) {
       setClicks(clicks - 1);
     }
-  };
-
-  const toggleOpen = () => {
-    setIsOpen(isOpen);
   };
 
   const validNetwork =
@@ -65,19 +55,7 @@ export default function ConnectWallet() {
       }
     }
     init();
-  }, [validNetwork, address]);
-
-  async function getStage() {
-    const MetaMiniYouthClubNFTContract = new ethers.Contract(
-      process.env.REACT_APP_NFT_ADDRESS,
-      ContractAbi,
-      signer
-    );
-    let stageVal = web3.utils.toDecimal(
-      await MetaMiniYouthClubNFTContract.getStage()
-    );
-    setCurrentStage(stageVal);
-  }
+  }, [validNetwork, address, signer]);
 
   async function PresaleMint() {
     const MetaMiniYouthClubNFTContract = new ethers.Contract(
@@ -203,7 +181,6 @@ export default function ConnectWallet() {
               </Col>
             </Col>
           );
-          break;
         case 1:
           return (
             <>
@@ -262,7 +239,6 @@ export default function ConnectWallet() {
               </Col> */}
             </>
           );
-          break;
         case 2:
           return (
             <>
@@ -309,14 +285,14 @@ export default function ConnectWallet() {
               </Col>
             </>
           );
-          break;
         case 3:
           return (
             <Col md={12} className="text-center mt-5">
               <h2>Buy on OpenSea</h2>
             </Col>
           );
-          break;
+        default:
+          return;    
       }
     } else {
       return (

@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -12,12 +11,9 @@ import About from "./Components/About";
 import Viproom from "./Components/Viproom";
 import Roadmap from "./Components/Roadmap";
 import Team from "./Components/Team";
-import FuturePlan from "./Components/FuturePlan";
 import Faq from "./Components/Faq";
 import JoinDiscord from "./Components/JoinDiscord";
 import ConnectWallet from "./Components/ConnectWallet";
-import DropCount from "./Components/DropCount";
-import MetamaskProvider from "./Components/MetamaskProvider";
 import Rare from "./Components/Rare";
 
 function App() {

@@ -1,14 +1,12 @@
-import { forEachChild } from "typescript";
-
 export const getMerkleProof = (myAddress, type) => {
   const { MerkleTree } = require("merkletreejs");
   const keccak256 = require("keccak256");
   
   let allowedList;
   
-  if (type == 'presale') {
+  if (type === 'presale') {
     allowedList = require("../whitelist/whitelist.json");
-  } else if (type == 'giveaway') {
+  } else if (type === 'giveaway') {
     allowedList = require("../whitelist/giveawaylist.json");
   }
 

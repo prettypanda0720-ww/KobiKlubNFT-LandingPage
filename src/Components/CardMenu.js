@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 class Dropdown extends React.Component {
   state = {
@@ -8,7 +8,6 @@ class Dropdown extends React.Component {
   toggleOpen = () => this.setState({ isOpen: !this.state.isOpen });
 
   render() {
-    const menuClass = `dropdown-menu${this.state.isOpen ? " show" : ""}`;
     return (
       <div className="dropdown" onClick={this.toggleOpen}>
         <button
