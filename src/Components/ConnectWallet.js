@@ -5,19 +5,25 @@ import Clock from "./Clock";
 import PresaleClock from "./PresaleClock";
 import Dropdown from "./CardMenu";
 import AddToCalendar from "../react-calendar/ReactAddToCalendar";
-import ContractAbi from "../Abis/BarGangNFT.json";
+import ContractAbi from "../Abis/MetaMiniYouthClubNFT.json";
 import web3 from "web3";
-import { useWeb3React } from "@web3-react/core";
 // import { injected } from "../Components/connectors";
 import { BigNumber, ethers, getDefaultProvider } from "ethers";
+import { selectWalletAuth } from "../redux/walletauth/selectors";
+import { useDispatch, useSelector } from "react-redux";
+import { useWalletContext } from "../contexts/wallet";
 import { PRESALE_PRICE, PUBLICSALE_PRICE } from "../config";
+import { getMerkleProof } from "../utils/merkleTree";
 require("dotenv").config();
 
 export default function ConnectWallet() {
   const [isOpen, setIsOpen] = useState(false);
   const [clicks, setClicks] = useState(0);
   const [currentStage, setCurrentStage] = useState(0);
-  const [apiCallable, setApiCallable] = useState(false);
+
+  const walletContext = useWalletContext();
+  const { address, provider, web3Provider, signer, chainId } =
+    useSelector(selectWalletAuth);
 
   const IncrementItem = () => {
     if (currentStage == 1) {
@@ -41,50 +47,48 @@ export default function ConnectWallet() {
     setIsOpen(isOpen);
   };
 
-  // const { chainId, active } = useWeb3React();
+  const validNetwork =
+    chainId === parseInt(process.env.REACT_APP_CHAIN_ID) ? true : false;
 
-  const active =  false;
-  const chainId = 4;
-  // const validNetwork =
-  //   chainId === parseInt(process.env.REACT_APP_CHAIN_ID) ? true : false;
-  // useEagerConnect();
-
-  // useEffect(() => {
-  //   if (validNetwork && active) {
-  //     setApiCallable(true);
-  //   }
-  // }, [validNetwork, active]);
-
-  // if (apiCallable) {
-  //   setInterval(() => {
-  //     getStage();
-  //   }, 1000);
-  // }
+  useEffect(() => {
+    async function init() {
+      if (address) {
+        const MetaMiniYouthClubNFTContract = new ethers.Contract(
+          process.env.REACT_APP_NFT_ADDRESS,
+          ContractAbi,
+          signer
+        );
+        let stageVal = web3.utils.toDecimal(
+          await MetaMiniYouthClubNFTContract.getStage()
+        );
+        setCurrentStage(stageVal);
+      }
+    }
+    init();
+  }, [validNetwork, address]);
 
   async function getStage() {
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    const BarGangContract = new ethers.Contract(
+    const MetaMiniYouthClubNFTContract = new ethers.Contract(
       process.env.REACT_APP_NFT_ADDRESS,
       ContractAbi,
-      provider.getSigner()
+      signer
     );
     let stageVal = web3.utils.toDecimal(
-      await BarGangContract.getCurrentStage()
+      await MetaMiniYouthClubNFTContract.getStage()
     );
     setCurrentStage(stageVal);
   }
 
   async function PresaleMint() {
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    const BarGangContract = new ethers.Contract(
+    const MetaMiniYouthClubNFTContract = new ethers.Contract(
       process.env.REACT_APP_NFT_ADDRESS,
       ContractAbi,
-      provider.getSigner()
+      signer
     );
-    const walletAddress = await provider.getSigner().getAddress();
+
     // console.log("signer", await provider.getSigner().getAddress());
     let mintedCount = web3.utils.toDecimal(
-      await BarGangContract.balanceOf(walletAddress)
+      await MetaMiniYouthClubNFTContract.balanceOf(address)
     );
     if (mintedCount + clicks > 5) {
       toast.error("OVERFLOW 5 TOKENS");
@@ -93,7 +97,7 @@ export default function ConnectWallet() {
     const presalePrice = PRESALE_PRICE * clicks;
 
     const price = ethers.utils.parseEther(presalePrice.toString());
-    const balances = await provider.getSigner().getBalance();
+    const balances = await signer.getBalance();
 
     if (price.div(balances).toNumber() > 1) {
       toast.error("Insufficient Funds!");
@@ -101,7 +105,11 @@ export default function ConnectWallet() {
     }
 
     try {
-      await BarGangContract.requestPrivateSale(clicks, { value: price })
+      await MetaMiniYouthClubNFTContract.mintWhitelist(
+        clicks,
+        getMerkleProof(address, "presale"),
+        { value: price }
+      )
         .then((tx) => {
           return tx.wait().then(
             (receipt) => {
@@ -132,16 +140,15 @@ export default function ConnectWallet() {
   }
 
   async function PublicMint() {
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    const BarGangContract = new ethers.Contract(
+    const MetaMiniYouthClubNFTContract = new ethers.Contract(
       process.env.REACT_APP_NFT_ADDRESS,
       ContractAbi,
-      provider.getSigner()
+      signer
     );
 
     let pubsalePrice = PUBLICSALE_PRICE * clicks;
     let price = ethers.utils.parseEther(pubsalePrice.toString());
-    const balances = await provider.getSigner().getBalance();
+    const balances = await signer.getBalance();
 
     let compareResult = price - balances;
     console.log("compareResult", compareResult);
@@ -151,7 +158,9 @@ export default function ConnectWallet() {
     }
 
     try {
-      await BarGangContract.requestPublicSale(clicks, { value: price })
+      await MetaMiniYouthClubNFTContract.publicMint(clicks, {
+        value: price,
+      })
         .then((tx) => {
           return tx.wait().then(
             (receipt) => {
@@ -180,22 +189,11 @@ export default function ConnectWallet() {
   }
 
   const MintButton = () => {
-    if (active) {
+    if (address) {
       switch (currentStage) {
         case 0:
           return (
             <Col md={12} className="text-center mt-5">
-              <h2>MINT on Feburary 7th 5pm EST</h2>
-            </Col>
-          );
-          break;
-        case 1:
-          return (
-            <>
-              <Col md={12} className="text-center mt-5">
-                <p>PRESALE</p>
-              </Col>
-
               <Col md={12} className="text-center mt-5">
                 <h2>MINT on Feburary 7th 5pm EST</h2>
               </Col>
@@ -203,6 +201,16 @@ export default function ConnectWallet() {
               <Col md={12} className="text-center mt-5">
                 <Clock class_name="mint-section" />
               </Col>
+            </Col>
+          );
+          break;
+        case 1:
+          return (
+            <>
+              <Col md={12} className="text-center mt-5">
+                <h2>PRESALE</h2>
+              </Col>
+
               <Col md={12} className="text-center mt-5">
                 <div className="connectcounter">
                   <div className="buttonLeft">
@@ -211,7 +219,10 @@ export default function ConnectWallet() {
                       title="Down"
                       onClick={DecreaseItem}
                     >
-                      <i className="fa fa-minus" style={{color: "#FFCC00"}}></i>
+                      <i
+                        className="fa fa-minus"
+                        style={{ color: "#FFCC00" }}
+                      ></i>
                     </button>
 
                     <input
@@ -226,15 +237,29 @@ export default function ConnectWallet() {
                       title="Up"
                       onClick={IncrementItem}
                     >
-                      <i className="fa fa-plus" style={{color: "#FFCC00"}}></i>
+                      <i
+                        className="fa fa-plus"
+                        style={{ color: "#FFCC00" }}
+                      ></i>
                     </button>
                   </div>
                   <span className="presale-mint" onClick={PresaleMint}>
                     mint
                   </span>
                 </div>
-                <p className="counterBelowTxt">MAX 5 PER TRANSACTION</p>
+                <p className="counterBelowTxt">MAX 5 PER WALLET</p>
               </Col>
+              {/* <Col md={12} className="text-center mt-5">
+                <h2>
+                  The POAP airdrop of an NFT will be sent to the first 500
+                  minters
+                </h2>
+                <div className="connectcounter">
+                  <span className="presale-mint" onClick={PresaleMint}>
+                    Claim
+                  </span>
+                </div>
+              </Col> */}
             </>
           );
           break;
@@ -252,7 +277,10 @@ export default function ConnectWallet() {
                       title="Down"
                       onClick={DecreaseItem}
                     >
-                      <i className="fa fa-minus" style={{color: "#FFCC00"}}></i>
+                      <i
+                        className="fa fa-minus"
+                        style={{ color: "#FFCC00" }}
+                      ></i>
                     </button>
 
                     <input
@@ -267,14 +295,17 @@ export default function ConnectWallet() {
                       title="Up"
                       onClick={IncrementItem}
                     >
-                      <i className="fa fa-plus" style={{color: "#FFCC00"}}></i>
+                      <i
+                        className="fa fa-plus"
+                        style={{ color: "#FFCC00" }}
+                      ></i>
                     </button>
                   </div>
                   <span className="presale-mint" onClick={PublicMint}>
                     mint
                   </span>
                 </div>
-                <p className="counterBelowTxt">MAX 10 PER TRANSACTION</p>
+                <p className="counterBelowTxt">MAX 10 PER WALLET</p>
               </Col>
             </>
           );

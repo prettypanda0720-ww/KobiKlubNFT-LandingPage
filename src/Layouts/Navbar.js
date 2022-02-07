@@ -4,21 +4,23 @@ import { BigNumber, ethers, getDefaultProvider } from "ethers";
 import { Link } from "react-router-dom";
 import { Navbar as Nb, Container, Nav, Image, Button } from "react-bootstrap";
 import { FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
-import { useWeb3React } from "@web3-react/core";
-import { injected } from "../utils/connector";
-import { useEagerConnect } from "../utils/hooks";
+import { useWalletContext } from "../contexts/wallet";
+import { selectWalletAuth } from "../redux/walletauth/selectors";
+import { useDispatch, useSelector } from "react-redux";
+import { truncateAddress } from "../utils/address";
 
 export default function Navbar() {
   const [addCss, setAddCss] = useState("");
   const [isWrongNetwork, setIsWrongNetwork] = useState();
-  // useEagerConnect();
-  const { chainId, active, activate, deactivate, account } = useWeb3React();
-  const context = useWeb3React();
+  
+  const walletContext = useWalletContext();
+  const { connect, disconnect } = walletContext;
+  const { address, provider, web3Provider, signer, chainId } = useSelector(selectWalletAuth);
+  const dispatch = useDispatch();
 
-  // useEagerConnect();
-
+  
   useEffect(() => {
-    if (active) {
+    if (address) {
       if (chainId !== parseInt(process.env.REACT_APP_CHAIN_ID)) {
         toast.error(
           "You are on wrong network. Please switch to Ethereum Mainnet to continue"
@@ -36,29 +38,22 @@ export default function Navbar() {
     }
   }, []);
 
-  async function connect(injected) {
-    activate(injected);
-  }
-
-  async function disConnect(injected) {
-    deactivate(injected);
-  }
   // window.localStorage.setItem("active", active);
 
   const renderButton = (
     <>
-      {active ? (
+      {address ? (
         <div className="connectedWallet">
-          <div className="walletAddress">{account}</div>
+          <div className="walletAddress">{truncateAddress(address)}</div>
           <button
             className="disConnectWallet"
-            onClick={() => disConnect(injected)}
+            onClick={disconnect}
           >
             Disconnect
           </button>
         </div>
       ) : (
-        <button className="connectWallet" onClick={() => connect(injected)}>
+        <button className="connectWallet" onClick={connect}>
           Connect
         </button>
       )}
