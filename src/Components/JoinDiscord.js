@@ -9,7 +9,11 @@ export default function JoinDiscord() {
         <div className="joinDiscord" style={{position: "relative"}}>
           <DSImage src={"discord-background.png"}>
             <div className="join-discord">
-              <a href="https://discord.gg/metaminiyouthclub" target="_blank" className="discord-btn">Join our Discord</a>
+              <div><b>Sign up to our newsletter for exclusive announcements and MMYC news.</b></div>
+              <div className="subscribe-wrapper">
+                <input type="email" className="input-email" />
+                <button className="subscribe-btn">Subscribe</button>
+              </div>
             </div>
           </DSImage>
         </div>
