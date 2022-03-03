@@ -12,7 +12,7 @@ export default function Dashboard() {
           <div><b>Welcoming OUR future into the future.</b></div>
           <div className="hero-btn-wrapper">
             <a href="https://discord.gg/metaminiyouthclub" target="_blank" className="discord-btn" variant="outline-secondary">Join Our Discord</a>
-            <a href="" target="_blank" className="newsletter-btn" variant="outline-secondary">Join Our Newsletter</a>
+            <a href="#join-discord" className="newsletter-btn" variant="outline-secondary">Join Our Newsletter</a>
           </div>
         </div>
       </BGImage>

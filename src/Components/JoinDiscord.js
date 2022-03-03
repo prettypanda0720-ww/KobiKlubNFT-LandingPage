@@ -8,7 +8,7 @@ export default function JoinDiscord() {
       <div id="socials">
         <div className="joinDiscord" style={{position: "relative"}}>
           <DSImage src={"discord-background.png"}>
-            <div className="join-discord">
+            <div className="join-discord" id="join-discord">
               <div><b>Sign up to our newsletter for exclusive announcements and MMYC news.</b></div>
               <div className="subscribe-wrapper">
                 <input type="email" className="input-email" />
