@@ -2,6 +2,8 @@ import React from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
 import { FaTwitter, FaInstagram, FaYoutube, FaDiscord } from "react-icons/fa";
 import DSImage from "./discordslider";
+import ContactForm from "./ContactForm"
+import MailchimpForm from "./MailchimpForm";
 
 export default function JoinDiscord() {
   return (
@@ -9,11 +11,12 @@ export default function JoinDiscord() {
         <div className="joinDiscord" style={{position: "relative"}}>
           <DSImage src={"discord-background.png"}>
             <div className="join-discord" id="join-discord">
-              <div><b>Sign up to our newsletter for exclusive announcements and MMYC news.</b></div>
-              <div className="subscribe-wrapper">
+              <MailchimpForm />
+              {/* <div><b>Sign up to our newsletter for exclusive announcements and MMYC news.</b></div> */}
+              {/* <div className="subscribe-wrapper">
                 <input type="email" className="input-email" />
                 <button className="subscribe-btn">Subscribe</button>
-              </div>
+              </div> */}
             </div>
           </DSImage>
         </div>

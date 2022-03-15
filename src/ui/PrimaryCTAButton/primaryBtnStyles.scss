@@ -1,0 +1,57 @@
+@use "../../scss/_variables" as v;
+@use "../../scss/_mixins" as m;
+
+.primaryBtn {
+  background-color: v.$highlight1;
+  border-style: none;
+  @include m.poppinsFontStack;
+  font-weight: bold;
+  color: black;
+  box-shadow: 0 4px 23px rgba(0, 0, 0, 0.45);
+  // width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: solid 1px black;
+  height: 57px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  &--normal {
+    padding: 8px 10px;
+    font-size: 16px;
+
+    @include m.smMinBreakPoint {
+      max-width: max-content;
+      padding: 4px 18px;
+    }
+  }
+
+  &--big {
+    padding: 10px 15px;
+    font-size: 20px;
+
+    @include m.smMinBreakPoint {
+      max-width: max-content;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+    transform: scale(0.98);
+    background-color: darkgray;
+    cursor: pointer;
+  }
+
+  &--grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+}
